@@ -1,0 +1,13 @@
+{
+    "name": "Salle trouveur",
+    "short_name": "ST",
+    "start_url" : "/",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "512x512"
+      }
+    ],
+    "display": "standalone"
+  }
+  

@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouveur de salle !</title>
+    <script src="ical.js"></script>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json" />
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo nantes univ.svg">
+        <span id="titre">Trouveur de salle</span>
+    </header>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th colspan="7"><span>8h</span></th>
+                <th colspan="7"><span>9h</span></th>
+                <th colspan="7"><span>10h</span></th>
+                <th colspan="7"><span>11h</span></th>
+                <th colspan="7"><span>12h</span></th>
+                <th colspan="7"><span>13h</span></th>
+                <th colspan="7"><span>14h</span></th>
+                <th colspan="7"><span>15h</span></th>
+                <th colspan="7"><span>16h</span></th>
+                <th colspan="7"><span>17h</span></th>
+                <th colspan="7"><span>18h</span></th>
+                <th colspan="7"><span>19h</span></th>
+                <th colspan="7"><span>20h</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+                <td>39</td>
+                <td>40</td>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+                <td>44</td>
+                <td>45</td>
+                <td>46</td>
+                <td>47</td>
+                <td>48</td>
+                <td>49</td>
+                <td>50</td>
+                <td>51</td>
+                <td>52</td>
+                <td>53</td>
+                <td>54</td>
+                <td>55</td>
+                <td>56</td>
+                <td>57</td>
+                <td>58</td>
+                <td>59</td>
+                <td>60</td>
+                <td>61</td>
+                <td>62</td>
+                <td>63</td>
+                <td>64</td>
+                <td>65</td>
+                <td>66</td>
+                <td>67</td>
+                <td>68</td>
+                <td>69</td>
+                <td>70</td>
+                <td>71</td>
+                <td>72</td>
+                <td>73</td>
+                <td>74</td>
+                <td>75</td>
+                <td>76</td>
+                <td>77</td>
+                <td>78</td>
+                <td>79</td>
+                <td>80</td>
+                <td>81</td>
+                <td>82</td>
+                <td>83</td>
+                <td>84</td>
+                <td>85</td>
+                <td>86</td>
+                <td>87</td>
+                <td>88</td>
+                <td>89</td>
+                <td>90</td>
+                <td>91</td>
+                <td>92</td>
+                <td>93</td>
+                <td>94</td>
+                <td>95</td>
+                <td>96</td>
+                <td>97</td>
+                <td>98</td>
+                <td>99</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td colspan="1">test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            
+            <tr>
+                <td colspan="100">test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </tbody>
+        </table> -->
+        <!-- <input id="jourAvant" type="button" value="<" class="dayButton">
+        <div id="date"></a></div>
+        <input id="jourApres" type="button" value=">" class="dayButton">  -->
+        <!-- <div id="dateWrapper">
+        </div> -->
+    <table id="calendar">
+        <!-- <thead id="header">
+            <tr id="hours">
+                <td colspan="10"><span>Nom salle</span></td>
+                <td colspan="7.5"><span>8h</span></td>
+                <td colspan="7.5"><span>9h</span></td>
+                <td colspan="7.5"><span>10h</span></td>
+                <td colspan="7.5"><span>11h</span></td>
+                <td colspan="7.5"><span>12h</span></td>
+                <td colspan="7.5"><span>13h</span></td>
+                <td colspan="7.5"><span>14h</span></td>
+                <td colspan="7.5"><span>15h</span></td>
+                <td colspan="7.5"><span>16h</span></td>
+                <td colspan="7.5"><span>17h</span></td>
+                <td colspan="7.5"><span>18h</span></td>
+                <td colspan="7.5"><span>19h</span></td>
+                <td colspan="7.5"><span>20h</span></td>
+            </tr>
+        </thead> -->
+        <tbody>
+
+        </tbody>
+ 
+        
+            <!-- <div id="buttons"></div> -->
+    </table>
+    </div>
+
+    </div>
+</body>
+</html>
