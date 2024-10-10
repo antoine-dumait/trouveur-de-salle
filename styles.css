@@ -18,6 +18,12 @@ body, html{
     /* display: flex;
     flex-direction: row; */
 }
+.td100, .td100 *{
+    display: block;
+    height: 0;
+    visibility: hidden;
+    border: 0;
+}
 .creneaux{
     width: 100%;
     display: flex;

@@ -387,9 +387,7 @@ function createCalendar(rooms){
   }
   // console.log(calendarBody);
   calendarBody.appendChild(inv);
-  inv.style.visibility = "hidden";
-  inv.style.height = 0;
-  inv.style.overflow = "hidden";
+  inv.classList.add("td100");
   calendar.appendChild(calendarBody);
   rooms.forEach(([free, nomSalle])=>{
     delta = 0;
