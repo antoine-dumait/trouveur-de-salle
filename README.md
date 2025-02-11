@@ -1,4 +1,7 @@
 # trouveur-de-salle
+
+https://antoine-dumait.github.io/trouveur-de-salle/
+
 Site permettant de trouver rapidement une salle de libre à la faculté des Sciences de Nantes.<br/>
 Codé en HTML, CSS, JS.<br/>
 Utilise CORS-PROXY pour récuprer les .ics.<br/>
